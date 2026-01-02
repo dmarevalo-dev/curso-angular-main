@@ -1,0 +1,86 @@
+{
+    "data": [
+        {
+            "_id":1,
+            "name":"Eternal Life",
+            "album": "Grace",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/e/e4/Jeff_Buckley_grace.jpg",
+            "artist": {
+                "name":"Jeff Buckley",
+                "nickname":"Jeff Buckley",
+                "nationality":"US"
+            },
+            "duration":{
+                "start":0,
+                "end": 333
+            },
+            "url":"http://localhost:3000/track.mp3"
+        },
+
+        {
+            "_id": 2,
+            "name": "Instant Crush",
+            "album": "Random Access Memories",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/2/26/Daft_Punk_-_Random_Access_Memories.png",
+            "artist": {
+            "name": "Daft Punk",
+            "nickname": "Daft Punk",
+            "nationality": "FR"
+            },
+            "duration": {
+            "start": 0,
+            "end": 289
+            },
+            "url": "http://localhost:3000/instantcrush.mp3"
+        },
+        {
+            "_id": 2,
+            "name": "Fireside",
+            "album": "AM",
+            "cover": "https://akamai.sscdn.co/tb/next/?url=%2Fuploadfile%2Fletras%2Falbuns%2F5%2F7%2Fc%2Fb%2F31278.jpg&w=1920&q=75",
+            "artist": {
+            "name": "Arctic Monkeys",
+            "nickname": "Arctic Monkeys",
+            "nationality": "UK"
+            },
+            "duration": {
+            "start": 0,
+            "end": 272
+            },
+            "url": "http://localhost:3000/do-i-wanna-know.mp3"
+        },
+        {
+            "_id": 3,
+            "name": "Run Your Mouth",
+            "album": "Submarine",
+            "cover": "https://i.scdn.co/image/ab67616d00001e02b19ac38a59cddd80da3cedcb",
+            "artist": {
+            "name": "The Marías",
+            "nickname": "The Marías",
+            "nationality": "US"
+            },
+            "duration": {
+            "start": 0,
+            "end": 216
+            },
+            "url": "http://localhost:3000/runyourmouth.mp3"
+        },
+        {
+            "_id": 4,
+            "name": "Reckoner",
+            "album": "In Rainbows",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/1/14/Inrainbowscover.png",
+            "artist": {
+            "name": "Radiohead",
+            "nickname": "Radiohead",
+            "nationality": "UK"
+            },
+            "duration": {
+            "start": 0,
+            "end": 270
+            },
+            "url": "http://localhost:3000/reckoner.mp3"
+        }
+
+ ]
+}

@@ -1,0 +1,106 @@
+.play-list-body {
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   TABLE HEADER
+========================= */
+.play-list-table-header {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 50px;
+  padding: 12px 35px;
+  margin: 0 0 12px 0;
+
+  list-style: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.play-list-table-header li:last-child {
+  text-align: right;
+}
+
+/* =========================
+   ROWS
+========================= */
+.play-list-rows {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 50px;
+  padding: 10px 35px;
+  list-style: none;
+  align-items: center;
+  border-radius: 4px;
+  transition: background-color 0.25s ease;
+}
+
+.play-list-rows:hover {
+  background-color: #1a1a1a;
+}
+
+/* =========================
+   TEXT STYLES
+========================= */
+.track-name-opacity {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+/* =========================
+   COVER SECTION
+========================= */
+.cover-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* IMAGE */
+.cover-track {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* INFO */
+.cover-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-track {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.name-track-details {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+/* =========================
+   CLOCK ICON
+========================= */
+.play-list-rows li:last-child {
+  text-align: right;
+}
+
+.sortable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sortable:hover {
+  color: #ffffff;
+}
+

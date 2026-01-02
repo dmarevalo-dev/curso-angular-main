@@ -1,0 +1,40 @@
+<div class="play-list-body">
+    <ul class="play-list-table-header">
+        <li (click)="sortByName()" class="sortable">
+            Nombre
+            <i class="uil"
+            [ngClass]="{
+                'uil-sort': sortDirection === '',
+                'uil-sort-amount-up': sortDirection === 'asc',
+                'uil-sort-amount-down': sortDirection === 'desc'
+            }"></i>
+        </li>
+        <li>album</li>
+        <li>fecha incorporation</li>
+        <li><i class="uil uil-clock-eight"></i></li>
+    </ul>
+    <ul class="play-list-rows" *ngFor="let track of tracksBetter">
+        <li class="track-name">
+            <ng-container *ngTemplateOutlet="coverSection;context:{track:track}"></ng-container>
+        </li>
+        <li class="track-name-opacity">
+            {{track.album}}
+        </li>
+        <li class="track-name-opacity">
+            {{track.album}}
+        </li>
+        <li class="track-name-opacity">
+            {{track.album}}
+        </li>
+    </ul>
+</div>
+
+<ng-template #coverSection let-track="track">
+    <div class="cover-section">
+        <img appImageBroken class="cover-track" [src]="track.cover" [alt]="track.name">
+        <div class="cover-info">
+            <div class="name-track">{{track.name}}</div>
+            <div class="name-track-details">{{track.artist.name}}</div>
+        </div>
+    </div>
+</ng-template>

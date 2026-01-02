@@ -1,0 +1,164 @@
+/* Página */
+.login-auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor */
+.login-auth-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  text-align: center;
+}
+
+/* Título */
+.login-auth-wrapper h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #191414;
+}
+
+/* Zona social */
+.login-social-zone {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+/* Botones base */
+.social-btn {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+}
+
+/* Facebook */
+.btn-fb {
+  background: #3b5998;
+  color: #fff;
+}
+
+/* Apple */
+.btn-apple {
+  background: #000;
+  color: #fff;
+}
+
+/* Google */
+.btn-google {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+/* Hover */
+.social-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
+/* Separador */
+.separator {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 24px 0;
+}
+
+/* Formulario */
+.login-auth-form {
+  text-align: left;
+}
+
+/* Grupo */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Inputs */
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #1db954;
+}
+
+/* Link */
+.form-steps {
+  margin: 12px 0 20px;
+}
+
+.form-steps .link {
+  font-size: 13px;
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Error */
+.error-message {
+  font-size: 13px;
+  color: #e91429;
+  margin-bottom: 12px;
+}
+
+/* Acción */
+.form-action {
+  margin-top: 12px;
+}
+
+/* Botón login */
+.form-action .login {
+  background: #1db954;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+
+.form-action .login:disabled {
+  background: #b3b3b3;
+  color: #ffffff;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.form-action .login:disabled:hover {
+  background: #b3b3b3;
+  transform: none;
+}
+

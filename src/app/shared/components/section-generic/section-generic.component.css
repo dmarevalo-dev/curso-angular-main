@@ -1,0 +1,25 @@
+.section-generic {
+  margin-bottom: 2rem;
+}
+
+.section--generic__player--zone {
+  overflow-x: hidden; /* 🔒 seguridad extra */
+}
+
+.section--generic__player--zone .player--list {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.15rem;
+}
+
+/* Cards pequeñas */
+.section--generic__player--zone .player--list.card-small {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+/* Cards grandes */
+.section--generic__player--zone .player--list.card-big {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}

@@ -1,0 +1,75 @@
+.play-list-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  padding: 32px;
+  min-height: 260px;
+  margin-top: -50px;
+
+
+
+  color: #ffffff;
+}
+
+/* COVER */
+.cover {
+  width: 200px;
+  height: 200px;
+  background-color: #333;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+.cover-nock {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #1db954;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-nock i {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+/* TEXT CONTENT */
+.content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* SMALL TEXT */
+.small-text {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+}
+
+/* TITLE */
+.title {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* SUB TITLE */
+.sub-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+.count-tracks {
+  margin-left: 8px;
+}

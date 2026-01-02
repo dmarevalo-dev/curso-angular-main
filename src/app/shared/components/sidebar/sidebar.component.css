@@ -1,0 +1,91 @@
+.side-bar {
+  width: 220px;
+  height: 100%;
+  background: linear-gradient(180deg, #0f0f0f 0%, #000000 100%);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #b3b3b3;
+}
+
+/* HEADER (Music) */
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1db954;
+  margin-bottom: 32px;
+}
+
+.menu-header i {
+  font-size: 24px;
+}
+
+/* LISTS */
+.side-bar_list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* ITEM */
+.list-wrapper-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  color: #b3b3b3;
+}
+
+/* ICON */
+.list-wrapper-item i {
+  font-size: 20px;
+  width: 22px;
+  text-align: center;
+}
+
+/* LABEL */
+.list-label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* HOVER */
+.list-wrapper-item:hover {
+  color: #ffffff;
+  background-color: #1a1a1a;
+}
+
+/* ACTIVE (Browse en la imagen) */
+.list-wrapper-item.active {
+  color: #1db954;
+}
+
+/* SEPARATORS */
+.side-bar_separator {
+  height: 1px;
+  background-color: #2a2a2a;
+  margin: 20px 0;
+}
+
+.line-separator {
+  margin: 16px 0;
+}
+
+/* CUSTOM LIST (playlists) */
+.list-three .list-wrapper-item {
+  padding-left: 12px;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+.list-three .list-wrapper-item:hover {
+  color: #ffffff;
+}
