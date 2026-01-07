@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth-page',
@@ -10,8 +11,9 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class AuthPageComponent {
 
   formLogin: FormGroup = new FormGroup({});
+  errorSession:boolean = false;
 
-constructor(private authService: AuthService) {
+constructor(private authService: AuthService, private router: Router) {
     console.log('AuthPageComponent created');
 }
 
@@ -22,9 +24,26 @@ ngOnInit(): void {
     });
 }
 
-  sendLogin(){
-    if(this.formLogin.valid){
-          this.authService.sendCredentials(this.formLogin.value.email, this.formLogin.value.password);
-    }
+  sendLogin() {
+  if (this.formLogin.valid) {
+    this.authService
+      .sendCredentials(
+        this.formLogin.value.email,
+        this.formLogin.value.password
+      )
+      .subscribe({
+        next: (response) => {
+          console.log('Login successful', response);
+          this.router.navigate(['/tracks']);
+          this.errorSession=false;
+        },
+        error: (error) => {
+          console.log('Login failed', error);
+          this.errorSession=true;
+        }
+      });
+  } else {
+    console.log('Form is invalid');
   }
+}
 }

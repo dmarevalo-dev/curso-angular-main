@@ -27,7 +27,7 @@ export class PlaylistBodyComponent {
     this.sortDirection =
     this.sortDirection === 'asc' ? 'desc' : 'asc';
 
-    this.tracks.sort((a,b) => {
+    this.tracksBetter.sort((a,b) => {
       const nameA = a.name.toLowerCase();
       const nameB = b.name.toLowerCase();
 

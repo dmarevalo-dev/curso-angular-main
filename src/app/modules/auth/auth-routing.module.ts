@@ -4,12 +4,17 @@ import { AuthPageComponent } from './pages/auth-page/auth-page.component';
 
 const routes: Routes = [
   {
-    path:'login',
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'login',
     component: AuthPageComponent
   },
   {
-    path:'*',
-    redirectTo:'login'
+    path: '**',
+    redirectTo: 'login'
   }
 ];
 

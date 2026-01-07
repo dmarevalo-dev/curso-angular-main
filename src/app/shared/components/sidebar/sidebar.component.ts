@@ -35,7 +35,7 @@ ngOnInit() {
         {
             name: 'Home',
             icon: 'uil uil-estate',
-            router: ['/', 'tracks']
+            router: ['/', 'auth']
         },
         {
             name: 'Buscar',
