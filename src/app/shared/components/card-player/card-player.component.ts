@@ -16,7 +16,7 @@ export class CardPlayerComponent {
   }
 
   ngOnInit(){
-    console.log(this.track);
+    //console.log(this.track);
   }
 
   sendTrack(track:TrackModel){

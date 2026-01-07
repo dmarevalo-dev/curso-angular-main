@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable, TrackByFunction } from '@angular/core';
 import { TrackModel } from '@core/models/track.model';
 import { map, mergeMap, Observable } from 'rxjs';
@@ -33,14 +33,6 @@ export class TracksService {
 
   getAllElectronics$(): Observable<TrackModel[]>{
     return this.httpClient.get<any>(`${this.URL}/tracks`).pipe(
-      // map((response) => {
-      //   return response.data.reverse();
-      // }),
-      // map((dataInvertida) => {
-      //   return dataInvertida.filter((track:TrackModel) => {
-      //     return track._id !== 1;
-      //   })
-      // })
       mergeMap(({data}) => this.skipById(data, 1))
     )
   }

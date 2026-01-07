@@ -18,13 +18,13 @@ export class TrackPageComponent implements OnInit {
   ngOnInit(): void {
 
     this.tracksService.getAllTracks$().subscribe(tracks =>{
-      console.log(tracks);
+      //console.log(tracks);
       this.tracksBetter = tracks;
       this.tracksElectronic = tracks;
     })
 
     this.tracksService.getAllElectronics$().subscribe(tracks =>{
-      console.log(tracks);
+      //console.log(tracks);
       this.tracksElectronic = tracks;
     })
   }
